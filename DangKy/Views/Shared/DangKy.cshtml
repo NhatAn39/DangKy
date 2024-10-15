@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="~/Content/mystyle.css" />
+</head>
+<body>
+    <div class="sign-up">
+        <img src="~/img/usericon.png" />
+        <h1>Đăng ký</h1>
+        <form>
+            <input type="email" class="input-box" placeholder="Nhập email của bạn">
+            <input type="password" class="input-box" placeholder="Mật khẩu">
+            <p><span><input type="checkbox" /></span>Chấp nhận với mọi điều khoản dịch vụ.</p>
+            <button type="button" class="signup-btn">Đăng ký</button>
+            <hr />
+            <p class="or">Khác</p>
+            <button type="button" class="Facebook-btn">Đăng nhập với Facebook</button>
+            <p>Bạn đã có tài khoản trước đây?<a href="#">Đăng nhập</a></p>
+            @RenderBody()
+        </form>
+    </div>
+</body>
+</html>
